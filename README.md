@@ -5,7 +5,7 @@ Prueba: **DESARROLLADOR JR**
 
 Deadline: **1 día**
 
-Nombre:
+Nombre: Jonathan Abrego Álvarez
 
 ------
 ## Clona y crea tu repositorio para la evaluación ##
@@ -13,8 +13,6 @@ Nombre:
 * Crear un repositorio público en tu cuenta personal de GitHub, BitBucket o Gitlab
 * Cambia el origen remoto para que apunte al repositorio público que acabas crear en tu cuenta
 * Coloca tu nombre en este archivo README.md y realiza un push al repositorio remoto
-
-## Jonathan Abrego Álvarez ##
 
 ------
 ## Prueba 1 ##
