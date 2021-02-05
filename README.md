@@ -5,7 +5,7 @@ Prueba: **DESARROLLADOR JR**
 
 Deadline: **1 día**
 
-Nombre: 
+Nombre:
 
 ------
 ## Clona y crea tu repositorio para la evaluación ##
@@ -13,6 +13,8 @@ Nombre:
 * Crear un repositorio público en tu cuenta personal de GitHub, BitBucket o Gitlab
 * Cambia el origen remoto para que apunte al repositorio público que acabas crear en tu cuenta
 * Coloca tu nombre en este archivo README.md y realiza un push al repositorio remoto
+
+## Jonathan Abrego Álvarez ##
 
 ------
 ## Prueba 1 ##
@@ -29,7 +31,7 @@ Nombre:
 
 Algunos endpoints que puedes utilizar:
 
-* https://jsonplaceholder.typicode.com/users 
+* https://jsonplaceholder.typicode.com/users
 * https://jsonplaceholder.typicode.com/users/(userId)
 * https://jsonplaceholder.typicode.com/users/(userId)/posts
 * https://jsonplaceholder.typicode.com/post/(postId)/comments
@@ -65,7 +67,7 @@ Para esta prueba será necesario agregar (al directorio **Prueba_2**) las senten
 	* **costos** con las siguientes columnas
 		* **tipoDeLlamada** varchar(15)
 		* **costo** decimal(10,4)
-		
+
 * Con las tablas contruidas, inserta los datos proporcionados en el archivo de excel **DatosPracticaSQL.xlsx** que se encuentran en la carpeta **Prueba_2** (revisar las dos hojas del archivo)
 * Genera las sentencias SQL que respondan lo siguiente:
 	* Que muestre los registros con tipo de llamada **Cel LD** durante el **mes febrero** **_(5 puntos)_**
@@ -73,7 +75,7 @@ Para esta prueba será necesario agregar (al directorio **Prueba_2**) las senten
 	* Que muestre el **número en minutos de dialogo** (tomando tiempoDialogo que está en segundos) y el **costo** de todas las llamadas del **mes de enero** **_(10 puntos)_**
 
 ------
-### Realiza el push del código de tus pruebas y compártenos el link a tu repositorio remoto 😊 
+### Realiza el push del código de tus pruebas y compártenos el link a tu repositorio remoto 😊
 
 ------
 Si tienes alguna duda sobre la evaluación puedes mandar un correo electrónico a [Rodrigo Acevedo](mailto:racevedo@nuxiba.com?subject=Dudas%20sobre%20evaluación%20técnica)
