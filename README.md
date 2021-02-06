@@ -5,7 +5,7 @@ Prueba: **DESARROLLADOR JR**
 
 Deadline: **1 día**
 
-Nombre: Jonathan Abrego Álvarez
+Nombre: **Jonathan Abrego Álvarez**
 
 ------
 ## Clona y crea tu repositorio para la evaluación ##
