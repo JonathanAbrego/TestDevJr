@@ -48,10 +48,10 @@ addEventListener('change', () => {
     telefono.textContent = response.phone
     listarUsuario.appendChild(telefono)
 
-    bttnPosts.innerText = 'Posts'
+    bttnPosts.textContent = 'Posts'
     listarUsuario.appendChild(bttnPosts);
 
-    bttnTodos.innerText = 'Todos'
+    bttnTodos.textContent = 'Todos'
     listarUsuario.appendChild(bttnTodos)
   })/*.then*/
 })/*.addEventListener*/
@@ -59,6 +59,8 @@ addEventListener('change', () => {
 
 
 bttnPosts.addEventListener('click',() => {
+  const tituloPosts = document.getElementById('tituloPosts')
+  tituloPosts.textContent = "POSTS Y COMENTARIOS"
   const usuario = document.getElementById('usuarios')
   const posts = document.getElementById('posts-list')
   const comentarios = document.getElementById('posts-comentarios')
@@ -68,14 +70,14 @@ bttnPosts.addEventListener('click',() => {
     for(let p of response){
       const ts = document.createElement('div')
       ts.classList.add("p-2", "bg-light", "border","disable")
-      ts.innerText = `${p.id}---${p.title} `
+      ts.textContent = `${p.id}---${p.title} `
       posts.appendChild(ts)
       fetch(`https://jsonplaceholder.typicode.com/post/${p.id}/comments`)
       .then(res => res.json())
       .then(res => {
         for(let c of res){
           const comm = document.createElement('div')
-          comm.innerText = `${c.name}`
+          comm.textContent = `${c.name}`
           ts.append(comm)
         }/*for*/
       })/*.then*/
@@ -85,6 +87,8 @@ bttnPosts.addEventListener('click',() => {
 
 
 bttnTodos.addEventListener('click',() =>{
+  const tituloTodos = document.getElementById('tituloTodos')
+  tituloTodos.textContent = "TODOS"
   const usuario = document.getElementById('usuarios')
   const todos = document.getElementById('desordenarTodos')
   const div = document.getElementById('form-div')
@@ -92,12 +96,14 @@ bttnTodos.addEventListener('click',() =>{
   const completed = document.createElement('input')
   const bttn1 = document.createElement('button')
   const labelTitle = document.createElement('label')
+  const recursoNuevo = document.getElementById('recursoNuevo')
+  recursoNuevo.textContent = "Recurso Nuevo"
   labelTitle.classList.add("form-label")
-  labelTitle.innerText = "Checkbox "
+  labelTitle.textContent = "Checkbox "
   title.type = 'text'
   completed.type = 'checkbox'
   completed.checked  = true
-  bttn1.innerText = 'Guardar'
+  bttn1.textContent = 'Guardar'
   bttn1.classList.add("btn", "btn-primary")
 
   //const fragment = document.createDocumentFragment();
@@ -107,7 +113,7 @@ bttnTodos.addEventListener('click',() =>{
     for(let t of response){
       const ts = document.createElement('div')
       ts.classList.add("p-2", "bg-light", "border","disable")
-      ts.innerText = `${t.id}---${t.title} `
+      ts.textContent = `${t.id}---${t.title} `
       //fragment.prepend(ts)
       todos.prepend(ts)
     }/*for*/
